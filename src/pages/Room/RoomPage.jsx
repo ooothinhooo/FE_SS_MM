@@ -362,7 +362,7 @@ function RoomPage({ user }) {
         const ArrayRoom = [];
         for (let i = obj?.start; i <= obj?.end; i++) {
           ArrayRoom.push({
-            roomCode: `${obj.kihieu.toUpperCase()}${i}`,
+            roomCode: `${obj?.kihieu.toUpperCase()}${i}`,
             roomFee: `${obj?.roomFee}`,
             deposit: "0",
             category: `${obj?.category}`,
@@ -397,6 +397,7 @@ function RoomPage({ user }) {
         });
 
         if (text) {
+          console.log(text);
           MR.POSTAPI_CREATEROOM(ArrayRoom);
         }
       } catch (error) {}
