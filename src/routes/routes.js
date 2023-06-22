@@ -51,13 +51,13 @@ const SignedIn = [
   { path: config.routeSocial.Dash, component: DashContentPage },
   { path: config.routeSocial.Search, component: SearchPage },
 
-  { path: config.routesManagingMotel.ViewBIll, component: ViewBillPage },
+  { path: config.routeSocial.ViewBIll, component: ViewBillPage },
 ];
 const NotLoggedIn = [
   { path: config.routes.home, component: LoginPage },
   { path: config.routes.Login, component: LoginPage },
   { path: config.routes.Register, component: SignUpPage },
-  { path: config.routesManagingMotel.ViewBIll, component: ViewBillPage },
+  { path: config.routes.ViewBIll, component: ViewBillPage },
 
   // { path: config.routes.home, component: HomePage },
   // { path: config.routes.home, component: HomePage },
